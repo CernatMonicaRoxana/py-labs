@@ -1,10 +1,12 @@
 def spiral(matrix):
+
     size = len(matrix)
     res = ''.join(matrix[0])
     res += ''.join([matrix[i][size-1] for i in range(1, size)])
     res += ''.join(matrix[size-1][-2::-1])
     res += ''.join([matrix[i][0] for i in range(size-2, 0, -1)])
-    res += ''.join(matrix[1])
+    if size > 2:
+        res += spiral([matrix[i][1:size-1] for i in range(1, size - 1)])
     return res
 
 
