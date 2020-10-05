@@ -3,10 +3,10 @@ def extract_first_no(string):
 
 
 if __name__ == '__main__':
-    str = 'An apple is 123 USD'
+    stri = 'An apple is 123 USD'
     str1 = 'abc123abc'
     str2 = 'ab2abb4'
 
-    print(extract_first_no(str))
+    print(extract_first_no(stri))
     print(extract_first_no(str1))
     print(extract_first_no(str2))
